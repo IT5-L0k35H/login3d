@@ -1,0 +1,203 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: #dce5f2;
+  overflow: hidden;
+  /* background: #e6eef8; */
+}
+
+/* ================= main panel================== */
+.main-panel {
+  /* height: 100%; */
+  width: 100%;
+}
+
+/* ===============Continer==================== */
+
+.main-panel .container {
+  padding: 20px;
+  box-shadow: -13px -13px 50px rgba(253, 255, 255, 0.8),
+    16px 16px 40px rgba(187, 195, 206, 0.6);
+
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  /* width: 100; */
+  background-color: #e6eef8;
+  max-width: 800px;
+  /* min-height: 480px; */
+  z-index: 9999;
+}
+
+@media (max-width: 800px) {
+  .main-panel .container {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ==========Sign in Container============= */
+
+.sign-in-container {
+  max-width: 50%;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .sign-in-container {
+    max-width: 100%;
+    /* height: 100%; */
+  }
+}
+
+/* ===========Form-container ================= */
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===========Form================ */
+.form-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.form-container form span {
+  font-size: 11px;
+  padding: 0px 12px;
+  font-weight: 300;
+  color: #767676;
+}
+
+.form-container p {
+  font-size: 13px;
+  padding: 0px 12px;
+  font-weight: 300;
+}
+
+p a {
+  color: #8d6dc6;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 22px;
+  color: #545454;
+  font-weight: 500;
+  margin-bottom: 46px;
+}
+
+input {
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0px;
+  font-family: Poppins, "sans-sarif" !important;
+  /* width: 100%; */
+  /* background: #e6eef8;
+  box-shadow: inset -4px -4px 12px rgba(253, 255, 255, 0.8),
+    inset 4px 4px 12px rgba(187, 195, 206, 0.6);
+  border-radius: 16px; */
+  background: #e6eef8;
+  /* background-color: #dce5f2; */
+  box-shadow: -4px -4px 12px rgba(253, 255, 255, 0.8),
+    4px 4px 12px rgba(187, 195, 206, 0.6);
+  border-radius: 16px;
+  min-width: -webkit-fill-available;
+  /* max-width: 250px; */
+}
+
+input:focus {
+  outline: none !important;
+  background: #e6eef8;
+  box-shadow: inset -4px -4px 12px rgba(253, 255, 255, 0.8),
+    inset 4px 4px 12px rgba(187, 195, 206, 0.6) !important;
+  border-radius: 16px;
+}
+
+button {
+  padding: 10px 30px;
+  background: #9574cd;
+  /* border-radius: 20px; */
+  border: none;
+  mix-blend-mode: normal;
+  box-shadow: inset -6px -6px 21px #7756af,
+    inset 6px 6px 12px rgba(255, 255, 255, 0.6);
+  border-radius: 16px;
+  color: white;
+  font-family: "Poppins";
+  margin: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+button:hover {
+  box-shadow: inset -4px -4px 13px rgba(233, 221, 254, 0.52),
+    inset 4px 4px 8px rgba(28, 28, 28, 0.42) !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+.social-link-container {
+  margin: 20px 0;
+}
+
+.social-link-container a {
+  text-decoration: none;
+}
+.social-media {
+  background: #e6eef8;
+  box-shadow: -3px -3px 12px rgba(253, 255, 255, 0.8),
+    4px 4px 12px rgba(187, 195, 206, 0.6);
+  /* background-color: #dce5f2; */
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 45px;
+  width: 45px;
+}
+
+a:hover {
+  background: #e6eef8;
+  box-shadow: inset 3px 3px 4px rgba(187, 195, 206, 0.6),
+    inset -3px -3px 4px rgba(253, 255, 255, 0.6);
+}
+
+/* ===========Side-Container============== */
+
+.side-container {
+  height: 100%;
+  max-width: 56%;
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+  .side-container {
+    max-width: 100%;
+    /* height: 100%; */
+  }
+}
+.overlay {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  /* background-image: url("./assets/images/Saly-19.png"); */
+}
